@@ -9,7 +9,7 @@ void Bubblesort(T a[],int n){
 	}
 }
 void swap(T *a,T *b){
-	int c=*a;
+	T c=*a;
 	*a=*b;
 	*b=c;
 }

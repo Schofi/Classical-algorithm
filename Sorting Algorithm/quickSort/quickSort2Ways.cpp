@@ -13,7 +13,7 @@ void __quickSort2Ways(T arr[],int l,int r){
 	__quickSort2Ways(arr,p+1,r);
 }
 template<class T>
-int __partition(T arr[],int l,int n){
+int __partition(T arr[],int l,int r){
 	swap(arr[l],arr[rand()%(r-l+1)+l]);
 	T v=arr[l];
 	int i=l+1,j=r;

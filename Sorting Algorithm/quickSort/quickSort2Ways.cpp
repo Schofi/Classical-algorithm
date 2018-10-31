@@ -19,11 +19,15 @@ int __partition(T arr[],int l,int r){
 	int i=l+1,j=r;
 	while(true)
 	{
-		while(i<=r&&arr[i]<v){
+		while(i<=r&&arr[i]=<v){
 			i++;
 		}
-		while(j>=l+1&&arr[j]>v){
+		while(j>=l+1&&arr[j]>=v){
 			j--;
+		}
+		if(i>j)
+		{
+			break;
 		}
 		swap(arr[i],arr[j]);
 		i++;
